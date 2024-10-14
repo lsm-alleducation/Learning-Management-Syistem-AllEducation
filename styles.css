@@ -1,0 +1,193 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366; /* Biru tua */
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px; /* Sesuaikan tinggi logo */
+  margin-right: 10px;
+}
+
+.system-title {
+  font-size: 24px; /* Ukuran teks untuk judul sistem */
+  color: white; /* Warna teks */
+}
+
+.menu {
+  display: flex;
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #003366;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.hamburger:hover .dropdown {
+  display: block;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 24px;
+}
+
+.scrolling-text {
+  margin: 20px 0;
+}
+
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.slide {
+  width: 100%; /* Sesuaikan dengan lebar kontainer */
+  max-width: 600px; /* Batasi lebar gambar */
+  animation: slideshow 30s infinite; /* Ganti sesuai dengan kebutuhan */
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+.enter-system-box {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.enter-system-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffcc00; /* Warna kuning */
+  color: #003366; /* Warna teks */
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.enter-system-link:hover {
+  background-color: #e0b700; /* Warna kuning lebih gelap saat hover */
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+  color: #003366;
+}
+
+.greeting {
+  text-align: center;
+  font-size: 24px;
+}
+
+.announcement,
+.usage-instructions {
+  margin: 20px;
+  padding: 10px;
+  background-color: #e8f0fe; /* Warna latar belakang */
+  border-radius: 5px;
+  text-align: left;
+}
+
+.features-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px; /* Sesuaikan ukuran kotak fitur */
+  transition: transform 0.2s; /* Animasi saat hover */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px); /* Menaikkan kotak fitur sedikit saat di hover */
+}
+
+.yellow-box {
+  background-color: #ffcc00; /* Warna kuning */
+  color: #003366; /* Warna teks */
+  border: 2px solid #e0b700; /* Warna border lebih gelap */
+}
+
+.yellow-box a {
+  color: #003366; /* Warna teks */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.yellow-box a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
